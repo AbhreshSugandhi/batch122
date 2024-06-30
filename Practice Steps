@@ -1,0 +1,68 @@
+Steps for creating a repo and pull push process
+1)	Create a directory – learngit
+2)	Go inside the dir
+3)	Initialize the repo as git repo
+4)	Echo Welcome to Git Training > git.txt
+5)	Check the status
+6)	Git.txt in untracked stage also referred as red zone
+7)	Move the file to staging area
+8)	Check the status
+9)	File should be in green zone – the staged area.
+10)	Now commit the file with a message
+11)	Check the status
+12)	Modify the file
+13)	Run the status
+14)	File should show modified and in red zone
+15)	Move to staging area
+16)	Run the status
+17)	Run the commit
+18)	Check the status – Everything is clean in the status
+19)	Modify the file
+20)	Move to staging area
+21)	Edit the file
+22)	Run the status - 2 copies visible 1 in red and 1 in green
+23)	Move the red file to staged file
+24)	Run the status – now files are merged to one copy of two changes.
+25)	Commit the file
+26)	Go to github
+27)	Create a new repo
+28)	Copy the SSH URL
+29)	Go to git terminal
+30)	Connect the url of repo as remote repo with the name origin
+31)	Verify the remote connection
+32)	Check the status
+33)	Check if any new updates available in github
+34)	Push the local changes to remote repo
+35)	Verify the updates on github if they are visible now
+36)	If the updates are visible then we have successfully completed the process.
+37)	Go to github
+38)	Create a new file and commit the change in github
+39)	Go to local
+40)	Fetch the changes
+41)	Git status – it should reflect that the remote is 1 commit ahead of local
+42)	Pull the changes
+43)	Git status – everything is clean now.
+
+Remote + Local
+1.	Create a remote repo
+2.	Clone it to local
+3.	Add a file and Commit the file
+4.	Check the log
+5.	Run the status
+6.	Add another file and commit the change
+7.	Check the status
+8.	Check the remote repo connection
+9.	Fetch
+10.	Pull
+11.	Push
+12.	Check the log
+13.	Everything is updated to both the repo
+14.	Got to github repo and check the changes done from local
+
+Steps for cloning and log check
+1)	Clone the following URL of my repo
+2)	Go to the repo and run the terminal
+3)	Check the status of the repo
+4)	Run the git log commands to see the various views of the log
+5)	Run and test your various log commands on this repo to get good view and understand the log commands.
+
