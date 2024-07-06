@@ -66,3 +66,23 @@ Steps for cloning and log check
 4)	Run the git log commands to see the various views of the log
 5)	Run and test your various log commands on this repo to get good view and understand the log commands.
 
+Steps for difference check
+1)	Go to learngit project
+2)	Check status
+3)	Create a new file – temp.txt
+4)	Move it to staging area
+5)	Commit the change
+6)	Check status
+7)	Now edit the temp.txt
+8)	Check the status
+9)	File should be in modified stage/unstaged area
+10)	Run the diff command
+11)	You can view the difference between the committed file and unstaged file
+12)	Now move the file to staging area
+13)	Run the diff command
+14)	You will see the difference between the committed file and staging file
+15)	Commit the file
+16)	Run the oneline log and take the latest two commit id’s
+17)	Run the diff command to view the difference between the two commits
+18)	You will be able to see the differences between two committed stage of the same file.
+
