@@ -86,3 +86,97 @@ Steps for difference check
 17)	Run the diff command to view the difference between the two commits
 18)	You will be able to see the differences between two committed stage of the same file.
 
+Steps for Rename
+1)	Go to learngit repo
+2)	Run status
+3)	Take two files
+4)	Rename one file using git command
+5)	Check the status
+6)	File in staging area and git tracking it to be renamed
+7)	Now edit another file from UI side of the lab
+8)	Go to terminal
+9)	Run status
+10)	Git shows the recently renamed file as deleted with old name and new file with new name
+11)	Move all the file to staging area
+12)	Now run the status
+13)	All files are in staging area with the highlighter as renamed.
+14)	Commit the changes.
+
+Steps for Alias
+1)	Go to learngit repo
+2)	Run the status
+3)	Check the global configuration list
+4)	Now add the alias for oneline log command
+5)	Now add the alias for status command
+6)	Now run the global configuration list again.
+7)	It will show you the alias registered in the list.
+8)	Now verify the alias.
+
+Steps for Amend
+1)	Go to learngit repo
+2)	Check the status
+3)	Now create a file – amend.txt
+4)	Add a heading with mistakes in the text “ We are teaching git amend command”
+5)	Now check the status
+6)	Move the file to staging area
+7)	Commit the changes
+8)	Now you want to rectify the change with the awareness of others
+9)	Check the one line log
+10)	Now correct the text as - “ We are learning git amend command”
+11)	Go to repo and check the status
+12)	File is visible in unstaged stage
+13)	Move the file to staged
+14)	Commit the changes but with the help of using the amend command
+15)	Check the one line log
+16)	Your log will show the same no of commit, but the last commit will be updated with the correct information.
+
+Steps for tags
+1)	Go to learngit repo
+2)	Check the status
+3)	Check the oneliner log
+4)	Find out which commit is to be added with a tag
+5)	Run the lightweight tag command with the commit id
+6)	Now run the oneliner log again
+7)	The tag is reflected with a yellow color shade
+8)	Find out one more commit id which is to be added with a tag
+9)	Run the Annotated tag command with the commit id and the message
+10)	Run the tag list command
+11)	Tags with messages will be displayed
+12)	Let’s delete one of the tag using tag deleting command
+13)	Run the oneliner log to verify if the tag is visible on the log
+14)	Run the tag list command to verify if we have successfully deleted the tag.
+
+Steps for Stashing
+1)	Go to learngit repo
+2)	Create a new file – stash1.txt
+3)	Add a heading in the file
+4)	Commit the file
+5)	Create a new file – stash2.txt
+6)	Add a heading in the file
+7)	Run the status
+8)	File is visible in untracked stage
+9)	Now run the stash command for a file
+10)	Git will reject it
+11)	Now add the stash2.txt to staging area
+12)	Now run the stash command for a file again
+13)	Your file is stashed
+14)	Now edit stash1.txt
+15)	Run the status
+16)	File in unstaged zone
+17)	Now run the stash command
+18)	Your file is stashed
+19)	Run the status
+20)	Now check the files in stashing space
+21)	Get the stash2.txt back to working directory using the pop command
+22)	Make the pending changes in the file and commit the file
+23)	Now get the stash1.txt popped out from stashing space
+24)	Make the pending changes and commit the file.
+25)	Now edit the stash2.txt
+26)	Run the status
+27)	File is in unstaged area
+28)	Run the stash command
+29)	See the stash list
+30)	Run the delete stash command
+31)	See the stash list
+32)	The modified changes and the stashed file are deleted
+33)	File is still in the repo but with old content.
