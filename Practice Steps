@@ -1,1 +1,330 @@
-Comming Soon
+Steps for creating a repo and pull push process
+1)	Create a directory – learngit
+2)	Go inside the dir
+3)	Initialize the repo as git repo
+4)	Echo Welcome to Git Training > git.txt
+5)	Check the status
+6)	Git.txt in untracked stage also referred as red zone
+7)	Move the file to staging area
+8)	Check the status
+9)	File should be in green zone – the staged area.
+10)	Now commit the file with a message
+11)	Check the status
+12)	Modify the file
+13)	Run the status
+14)	File should show modified and in red zone
+15)	Move to staging area
+16)	Run the status
+17)	Run the commit
+18)	Check the status – Everything is clean in the status
+19)	Modify the file
+20)	Move to staging area
+21)	Edit the file
+22)	Run the status - 2 copies visible 1 in red and 1 in green
+23)	Move the red file to staged file
+24)	Run the status – now files are merged to one copy of two changes.
+25)	Commit the file
+26)	Go to github
+27)	Create a new repo
+28)	Copy the SSH URL
+29)	Go to git terminal
+30)	Connect the url of repo as remote repo with the name origin
+31)	Verify the remote connection
+32)	Check the status
+33)	Check if any new updates available in github
+34)	Push the local changes to remote repo
+35)	Verify the updates on github if they are visible now
+36)	If the updates are visible then we have successfully completed the process.
+37)	Go to github
+38)	Create a new file and commit the change in github
+39)	Go to local
+40)	Fetch the changes
+41)	Git status – it should reflect that the remote is 1 commit ahead of local
+42)	Pull the changes
+43)	Git status – everything is clean now.
+Remote + Local
+1.	Create a remote repo
+2.	Clone it to local
+3.	Add a file and Commit the file
+4.	Check the log
+5.	Run the status
+6.	Add another file and commit the change
+7.	Check the status
+8.	Check the remote repo connection
+9.	Fetch
+10.	Pull
+11.	Push
+12.	Check the log
+13.	Everything is updated to both the repo
+14.	Got to github repo and check the changes done from local
+
+Steps to setup SSH
+1)	Go to terminal window
+2)	Run the command cd ~/.ssh
+3)	Now you are inside the .ssh directory of your system.
+4)	Run the next command - ssh-keygen -t rsa -C “email-id”
+5)	The above command will generate two ssh keys – Public and Private
+6)	Go to your system home directory and look for .ssh directory and there you will find one .pub extension file.
+7)	Open the file and you will see the public key.
+8)	Copy the public key as it is.
+9)	Open the GitHub setting page >> go to ssh keys tab >> click on new ssh key
+10)	Add the key and save it.
+11)	Now your local machine identity is verified by your GitHub account successfully.
+12)	Verify the connection by running the command ssh -T git@github.com.
+13)	It will ask Are you sure you want to continue connecting (yes/no)? just say yes here.
+14)	You should receive a response as:
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+Steps for cloning and log check
+1)	Clone the following URL of my repo
+2)	Go to the repo and run the terminal
+3)	Check the status of the repo
+4)	Run the git log commands to see the various views of the log
+5)	Run and test your various log commands on this repo to get good view and understand the log commands.
+Steps for difference check
+1)	Go to learngit project
+2)	Check status
+3)	Create a new file – temp.txt
+4)	Move it to staging area
+5)	Commit the change
+6)	Check status
+7)	Now edit the temp.txt
+8)	Check the status
+9)	File should be in modified stage/unstaged area
+10)	Run the diff command
+11)	You can view the difference between the committed file and unstaged file
+12)	Now move the file to staging area
+13)	Run the diff command
+14)	You will see the difference between the committed file and staging file
+15)	Commit the file
+16)	Run the oneline log and take the latest two commit id’s
+17)	Run the diff command to view the difference between the two commits
+18)	You will be able to see the differences between two committed stage of the same file.
+Steps for Rename
+1)	Go to learngit repo
+2)	Run status
+3)	Take two files
+4)	Rename one file using git command
+5)	Check the status
+6)	File in staging area and git tracking it to be renamed
+7)	Now edit another file from UI side of the lab
+8)	Go to terminal
+9)	Run status
+10)	Git shows the recently renamed file as deleted with old name and new file with new name
+11)	Move all the file to staging area
+12)	Now run the status
+13)	All files are in staging area with the highlighter as renamed.
+14)	Commit the changes.
+Steps for Alias
+1)	Go to learngit repo
+2)	Run the status
+3)	Check the global configuration list
+4)	Now add the alias for oneline log command
+5)	Now add the alias for status command
+6)	Now run the global configuration list again.
+7)	It will show you the alias registered in the list.
+8)	Now verify the alias.
+
+Steps for Amend
+1)	Go to learngit repo
+2)	Check the status
+3)	Now create a file – amend.txt
+4)	Add a heading with mistakes in the text “ We are teaching git amend command”
+5)	Now check the status
+6)	Move the file to staging area
+7)	Commit the changes
+8)	Now you want to rectify the change with the awareness of others
+9)	Check the one line log
+10)	Now correct the text as - “ We are learning git amend command”
+11)	Go to repo and check the status
+12)	File is visible in unstaged stage
+13)	Move the file to staged
+14)	Commit the changes but with the help of using the amend command
+15)	Check the one line log
+16)	Your log will show the same no of commit, but the last commit will be updated with the correct information.
+Step for direct commit
+1)	Check the status
+2)	Modify any file from the repo
+3)	Check the status
+4)	File is currently in modified stage
+5)	Run the commit command
+6)	Check the log
+7)	Commit is done
+Steps for ignore
+1)	Configure the gitignore using configuration command to be done only one time in the same machine
+2)	Go to learngit
+3)	Run the status
+4)	Create a file with any name but with an extension as .gitignore
+5)	Add two files with test1.ppt and test2.xlsx
+6)	Run status
+7)	Files are in red zone i.e. untracked file stage
+8)	Now edit the .gitignore file and add the file extensions?
+9)	Run the status
+10)	Now files not visible in the status
+11)	Now mark the commit of changes in .gitignore file
+12)	Run the status
+13)	Now the .gitignore file is tracked but the files mentioned inside the file are not been tracked
+
+Steps for Checkout
+1)	Git status
+2)	Git checkout to remote repo and main branch
+3)	Go to file explorer and view the file an
+
+Steps for tags
+1)	Go to learngit repo
+2)	Check the status
+3)	Check the oneliner log
+4)	Find out which commit is to be added with a tag
+5)	Run the lightweight tag command with the commit id
+6)	Now run the oneliner log again
+7)	The tag is reflected with a yellow color shade
+8)	Find out one more commit id which is to be added with a tag
+9)	Run the Annotated tag command with the commit id and the message
+10)	Run the tag list command
+11)	Tags with messages will be displayed
+12)	Let’s delete one of the tag using tag deleting command
+13)	Run the oneliner log to verify if the tag is visible on the log
+14)	Run the tag list command to verify if we have successfully deleted the tag.
+
+Steps for Stashing
+1)	Go to learngit repo
+2)	Create a new file – stash1.txt
+3)	Add a heading in the file
+4)	Commit the file
+5)	Create a new file – stash2.txt
+6)	Add a heading in the file
+7)	Run the status
+8)	File is visible in untracked stage
+9)	Now run the stash command for a file
+10)	Git will reject it
+11)	Now add the stash2.txt to staging area
+12)	Now run the stash command for a file again
+13)	Your file is stashed
+14)	Now edit stash1.txt
+15)	Run the status
+16)	File in unstaged zone
+17)	Now run the stash command
+18)	Your file is stashed
+19)	Run the status
+20)	Now check the files in stashing space
+21)	Get the stash2.txt back to working directory using the pop command
+22)	Make the pending changes in the file and commit the file
+23)	Now get the stash1.txt popped out from stashing space
+24)	Make the pending changes and commit the file.
+25)	Now edit the stash2.txt
+26)	Run the status
+27)	File is in unstaged area
+28)	Run the stash command
+29)	See the stash list
+30)	Run the delete stash command
+31)	See the stash list
+32)	The modified changes and the stashed file are deleted
+33)	File is still in the repo but with old content.
+
+Steps for private GitHub repo
+1)	Go to github
+2)	Create a new private repo
+3)	Go to repo settings page
+4)	On the left Click on Manage access
+5)	Click on invite a collaborator
+6)	Type search and select the username of the contributor
+7)	Click on add
+8)	Now go to the contributor’s email id to accept the invitation
+9)	Once accepted you can access the repo
+
+Steps for Clean
+1)	Go to learngit repo
+2)	Run the status
+3)	Add a new file
+4)	Run the status
+5)	File in the untracked area
+6)	Now run the command to remove the file
+7)	Run the status
+8)	File removed
+9)	Add a directory and a file inside the directory
+10)	Add a file outside the directory
+11)	Now run the clean command to remove the directory and files
+12)	Run the status file and directory is removed successfully
+13)	Add a directory and a file inside the directory
+14)	Add a file outside the directory
+15)	Now run the clean command to remove the directory and files along with ignored files
+16)	Run the status file and directory is removed successfully
+Steps for RM
+1)	Go to learngit repo
+2)	Run status
+3)	Add a new file testrm1.txt
+4)	Commit the change
+5)	Run the status
+6)	Run the rm command to delete testrm1.txt
+7)	File is deleted
+8)	Run the status
+9)	Now add a new file testrm2.txt and commit it
+10)	Now run the status
+11)	Now run the command for removing the file but without deleting it from the repo
+12)	Run the status
+13)	Same file now visible in unstaged and staged area
+14)	Just commit the file from staging area keeping the unstaged file as it is
+15)	Run the status
+16)	Record of deletion moved to the commit
+17)	New file is in untracked area
+18)	Add the same file name testrm2.txt in the .gitignore
+19)	Now run the status
+20)	Now the file is not visible instead .gitignore is visible as modified
+21)	Run the commit for .gitignore
+22)	Run the status
+23)	Now the file is never going to be a part of the repo further. 
+24)	History of that file is over.
+Steps for Reset
+1)	Go to learngit repo
+2)	Add a new file reset.txt
+3)	Add a heading – “Welcome to Git and Github Course”
+4)	Check the status
+5)	Commit the changes
+6)	Modify reset.txt by adding second line – “Instructor-led Learning!”
+7)	Check the status
+8)	Commit the changes
+9)	Now you have two commits for the same file
+10)	Add another commit with line 3 – “By Abhresh”
+11)	Run the mixed reset command and go to 1st commit
+12)	Run the status – File should be in unstaged area
+13)	Move the file back to the committed stage by committing the file
+14)	Run the soft reset command
+15)	Run the status – File should be in staged area
+16)	Move the file back to the committed stage by committing the file
+17)	Run the hard reset command
+18)	Run the status – File is deleted
+19)	Now commit the changes of deletion of the file.
+Steps for reset part 2
+1)	Go to learngit repo
+2)	Run the status
+3)	Run the oneliner log
+4)	Copy any old commit where a new file was created
+5)	Run the reset command to move the repo to that commit
+6)	This will reset the history to that commit and now all the newer commits are deleted.
+Steps for revert command
+1)	 Make a new dir – revertgit
+2)	Add a new file – a.txt
+3)	Commit the change with a msg as m1
+4)	Add a new file – b.txt
+5)	Commit the change with a msg as m2
+6)	Add a new file – c.txt
+7)	Commit the change with a msg as m3
+8)	Run the log
+9)	Run the revert with commit id of 3rd commit
+10)	Your c.txt gets deleted and a new commit is created for reverting to the stage of 2nd commit completion.
+11)	Run the log
+12)	The repository is back to the state of 2nd commit
+Steps for revert command part2
+13)	To bring back the latest commit back to the repo
+14)	Run the log
+15)	Run the reset to commit 3
+16)	But the file is not back into the repo
+17)	Run the checkout c.txt
+18)	This will bring the file back to our repo.
+Steps to Reset for old records using Reflog clear
+1)	Run the Reflog
+2)	Copy the commitid
+3)	Checkout weather that commit is correct
+4)	Run the reset command with the expected commit
+5)	If there is any file which was deleted, then system will show you the file name with D mark
+6)	Recover the file using checkout and file name command
