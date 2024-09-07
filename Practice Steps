@@ -328,3 +328,55 @@ Steps to Reset for old records using Reflog clear
 4)	Run the reset command with the expected commit
 5)	If there is any file which was deleted, then system will show you the file name with D mark
 6)	Recover the file using checkout and file name command
+
+Steps for Branching
+1)	Create a new repo
+2)	Add a new file and commit the changes
+3)	Run the command to see the list of branches
+4)	Only main branch visible
+5)	Create a new branch with the name develop
+6)	Move inside the develop branch
+7)	Create a new branch feature1
+8)	Create a new branch feature2
+9)	Run the command to see the list of branches
+10)	4 branches with their names visible
+11)	Now delete the feature1 branch
+Steps for branching practice
+1)	Create a new Branch.
+2)	Now switch to the main branch and push the updates to the remote repo.
+3)	Now switch back to the new branch
+4)	Make the necessary changes on the file.
+5)	Now add and commit the changes within new branch
+6)	Check the status
+7)	Check the log
+8)	Push the changes to the remote repo
+9)	Git status
+10)	Once the manager confirms the changes are good to move to the final copy
+11)	We will now merge the new branch to the main branch
+
+Merge 
+1)	Create a repo
+2)	Add readme.txt and commit it as “m1”
+3)	Modify the readme.txt and commit it as “m2”
+4)	Create a branch as “feature”
+5)	Checkout to feature branch
+6)	Add feature.txt and commit it as “f1”
+7)	Modify the feature.txt and commit it as “f2”
+8)	Go to main 
+9)	Run merge feature
+
+Steps with recursive merge without conflict
+1)	Create a repo
+2)	Add readme.txt and commit it as “m1”
+3)	Modify the readme.txt and commit it as “m2”
+4)	Create a branch as “feature”
+5)	Checkout to feature branch
+6)	Add feature.txt and commit it as “f1”
+7)	Modify the feature.txt and commit it as “f2”
+8)	Now checkout main add new file and commit it as “m3”
+9)	Git merge feature
+10)	Vim tool will open and it will ask you for a merge commit message
+11)	Once done run the log and now you can see the merge commit.
+
+
+
